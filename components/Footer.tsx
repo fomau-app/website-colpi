@@ -31,17 +31,6 @@ export default function Footer() {
                 style={{ mixBlendMode: "screen" }}
               />
             </a>
-            <p className="text-xs text-white/30 mb-4 flex items-center gap-1">
-              by{" "}
-              <a
-                href="https://fomau.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block opacity-50 hover:opacity-90 transition-opacity duration-200"
-              >
-                <Image src="/logo-fomau.png" alt="fomau" width={100} height={30} className="h-[4.2rem] w-auto" style={{ mixBlendMode: "screen" }} />
-              </a>
-            </p>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[200px]">
               Les meilleurs jeux de soirée dans ton téléphone.
             </p>

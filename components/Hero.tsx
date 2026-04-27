@@ -81,17 +81,17 @@ export default function Hero() {
         </div>
 
         <div className="overflow-hidden mt-2 mb-8">
-          <motion.p variants={item} className="text-white/40 text-sm tracking-widest">
-            by{" "}
+          <motion.div variants={item} className="flex flex-col items-center gap-0">
+            <p className="text-white/40 text-sm tracking-widest -mb-3">by</p>
             <a
               href="https://fomau.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block opacity-60 hover:opacity-90 transition-opacity duration-200"
             >
-              <Image src="/logo-fomau.png" alt="fomau" width={100} height={30} className="h-[4.2rem] w-auto inline-block" style={{ mixBlendMode: "screen", verticalAlign: "middle" }} />
+              <Image src="/logo-fomau.png" alt="fomau" width={100} height={30} className="h-[4.2rem] w-auto" style={{ mixBlendMode: "screen" }} />
             </a>
-          </motion.p>
+          </motion.div>
         </div>
 
         <div className="overflow-hidden">
