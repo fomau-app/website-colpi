@@ -50,10 +50,7 @@ export default function Hero() {
           Disponible maintenant
         </span>
         <span className="hidden sm:block w-px h-3 bg-white/20" />
-        <span className="flex items-center gap-1">
-          Télécharge l&apos;app gratuitement
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gold"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </span>
+        <span>Télécharge l&apos;app gratuitement</span>
       </motion.div>
 
       {/* Main headline */}
