@@ -89,7 +89,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-block opacity-60 hover:opacity-90 transition-opacity duration-200"
             >
-              <Image src="/logo-fomau.png" alt="fomau" width={100} height={30} className="h-7 w-auto inline-block" style={{ mixBlendMode: "screen", verticalAlign: "middle" }} />
+              <Image src="/logo-fomau.png" alt="fomau" width={100} height={30} className="h-10 w-auto inline-block" style={{ mixBlendMode: "screen", verticalAlign: "middle" }} />
             </a>
           </motion.p>
         </div>

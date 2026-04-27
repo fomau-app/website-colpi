@@ -39,7 +39,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-block opacity-50 hover:opacity-90 transition-opacity duration-200"
               >
-                <Image src="/logo-fomau.png" alt="fomau" width={100} height={30} className="h-7 w-auto" style={{ mixBlendMode: "screen" }} />
+                <Image src="/logo-fomau.png" alt="fomau" width={100} height={30} className="h-10 w-auto" style={{ mixBlendMode: "screen" }} />
               </a>
             </p>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[200px]">
