@@ -31,15 +31,15 @@ export default function Footer() {
                 style={{ mixBlendMode: "screen" }}
               />
             </a>
-            <p className="text-xs text-white/30 mb-4">
+            <p className="text-xs text-white/30 mb-4 flex items-center gap-1">
               by{" "}
               <a
                 href="https://fomau.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-lighter hover:text-brand-light transition-colors"
+                className="inline-block opacity-50 hover:opacity-90 transition-opacity duration-200"
               >
-                fomau
+                <Image src="/logo-fomau.png" alt="fomau" width={60} height={18} className="h-[1em] w-auto" style={{ mixBlendMode: "screen" }} />
               </a>
             </p>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[200px]">

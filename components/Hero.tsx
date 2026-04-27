@@ -87,9 +87,9 @@ export default function Hero() {
               href="https://fomau.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-brand-lighter hover:text-brand-light transition-colors duration-200"
+              className="inline-block opacity-60 hover:opacity-90 transition-opacity duration-200"
             >
-              fomau
+              <Image src="/logo-fomau.png" alt="fomau" width={60} height={18} className="h-[1.1em] w-auto inline-block" style={{ mixBlendMode: "screen", verticalAlign: "middle" }} />
             </a>
           </motion.p>
         </div>
