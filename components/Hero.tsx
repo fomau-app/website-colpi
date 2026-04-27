@@ -23,14 +23,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 pt-24">
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-24">
       <div ref={orb1} className="orb w-[700px] h-[700px] bg-brand/15 top-[-200px] right-[-300px]" />
-      <div ref={orb2} className="orb w-[400px] h-[400px] bg-gold/8 bottom-[-100px] left-[-100px]" />
+      <div ref={orb2} className="orb w-[400px] h-[400px] bg-gold/8 bottom-[-80px] left-[-80px]" />
       <div className="orb w-[300px] h-[300px] bg-brand/8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
 
       {/* Grid pattern */}
       <div
-        className="absolute inset-0 opacity-[0.025]"
+        className="absolute inset-0 opacity-[0.025] pointer-events-none"
         style={{
           backgroundImage: `linear-gradient(rgba(240,165,0,0.5) 1px, transparent 1px),
             linear-gradient(90deg, rgba(240,165,0,0.5) 1px, transparent 1px)`,
@@ -65,7 +65,7 @@ export default function Hero() {
       >
         <div className="overflow-hidden mb-4">
           <motion.p variants={item} className="text-sm font-medium tracking-[0.3em] text-gold/80 uppercase mb-6">
-            Le jeu de soirée
+            ta soirée commence maintenant
           </motion.p>
         </div>
 
@@ -102,9 +102,8 @@ export default function Hero() {
             variants={item}
             className="text-[clamp(1rem,2.5vw,1.3rem)] text-white/50 max-w-xl mx-auto leading-relaxed font-light"
           >
-            Des jeux de soirée qui{" "}
-            <span className="text-white/80">pimentent</span> tes sorties.
-            Des débats, des défis, des fous rires — tout dans ton téléphone.
+            Des jeux qui <span className="text-white/80">pimentent</span> tes soirées.
+            Des débats, des défis, des fous rires : tout dans ton téléphone.
           </motion.p>
         </div>
 
@@ -117,7 +116,7 @@ export default function Hero() {
             href="https://apps.apple.com/fr/app/colpi/id6755601727"
             target="_blank"
             rel="noopener noreferrer"
-            className="shimmer-btn-gold text-white font-semibold px-8 py-4 rounded-2xl text-base flex items-center gap-3 hover:scale-105 transition-transform"
+            className="shimmer-btn-gold text-white font-semibold px-8 py-4 rounded-2xl text-base flex items-center justify-center gap-3 w-[200px] hover:scale-105 transition-transform"
           >
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
               <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
@@ -128,7 +127,7 @@ export default function Hero() {
             href="https://play.google.com/store/apps/details?id=com.colpi"
             target="_blank"
             rel="noopener noreferrer"
-            className="shimmer-btn-light font-semibold px-8 py-4 rounded-2xl text-base flex items-center gap-3 hover:scale-105 transition-transform"
+            className="shimmer-btn-light font-semibold px-8 py-4 rounded-2xl text-base flex items-center justify-center gap-3 w-[200px] hover:scale-105 transition-transform"
           >
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
               <path d="M3.18 23.76c.31.17.66.22 1.01.14l12.2-7.04-2.72-2.72-10.49 9.62zm-1.14-20.5C2.02 3.56 2 3.88 2 4.2v15.6c0 .32.02.64.04.94l10.12-10.12-10.12-10.36zM20.55 10.3l-2.68-1.55-3.1 3.1 3.1 3.1 2.72-1.57c.78-.45.78-1.63-.04-2.08zM4.19.1C3.84.02 3.49.07 3.18.24L13.7 10.76l2.72-2.72L4.19.1z"/>

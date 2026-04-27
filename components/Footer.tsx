@@ -1,11 +1,12 @@
 "use client";
+import Image from "next/image";
 
 type LinkItem = { label: string; href: string; external?: boolean };
 
 const links: Record<string, LinkItem[]> = {
   Produit: [
-    { label: "Les jeux", href: "#jeux" },
     { label: "L'app", href: "#" },
+    { label: "Les jeux", href: "#jeux" },
   ],
   Contact: [
     { label: "contact@colpi.fr", href: "mailto:contact@colpi.fr" },
@@ -20,8 +21,27 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-2 md:col-span-1">
-            <p className="text-2xl font-black tracking-wider text-white/90 mb-1">COLPI</p>
-            <p className="text-xs text-white/30 mb-4">by <span className="text-brand-lighter">fomau</span></p>
+            <a href="#" className="inline-block mb-1">
+              <Image
+                src="/logo-colpi2.png"
+                alt="COLPI"
+                width={120}
+                height={36}
+                className="h-9 w-auto"
+                style={{ mixBlendMode: "screen" }}
+              />
+            </a>
+            <p className="text-xs text-white/30 mb-4">
+              by{" "}
+              <a
+                href="https://fomau.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-brand-lighter hover:text-brand-light transition-colors"
+              >
+                fomau
+              </a>
+            </p>
             <p className="text-white/40 text-sm font-light leading-relaxed max-w-[200px]">
               Les meilleurs jeux de soirée dans ton téléphone.
             </p>
