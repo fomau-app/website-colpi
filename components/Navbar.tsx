@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const links = [
   { label: "Les jeux", href: "#jeux" },
@@ -30,8 +31,15 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <a href="#" className="flex items-center gap-2">
-            <span className="text-xl font-black tracking-wider text-white/90">COLPI</span>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/logo-colpi2.png"
+              alt="COLPI"
+              width={120}
+              height={40}
+              className="h-9 w-auto"
+              style={{ mixBlendMode: "screen" }}
+            />
           </a>
 
           <nav className="hidden md:flex items-center gap-8">

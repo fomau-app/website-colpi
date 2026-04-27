@@ -2,6 +2,7 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap";
+import Image from "next/image";
 
 export default function Hero() {
   const orb1 = useRef<HTMLDivElement>(null);
@@ -69,17 +70,30 @@ export default function Hero() {
         </div>
 
         <div className="overflow-hidden">
-          <motion.h1
-            variants={item}
-            className="text-[clamp(4rem,12vw,10rem)] font-black leading-[0.95] tracking-tight uppercase"
-          >
-            <span className="text-white">COL</span><span className="gradient-text-gold">PI</span>
+          <motion.h1 variants={item}>
+            <Image
+              src="/logo-colpi2.png"
+              alt="COLPI"
+              width={900}
+              height={270}
+              className="w-[clamp(260px,65vw,680px)] h-auto mx-auto"
+              style={{ mixBlendMode: "screen" }}
+              priority
+            />
           </motion.h1>
         </div>
 
         <div className="overflow-hidden mt-2 mb-8">
           <motion.p variants={item} className="text-white/40 text-sm tracking-widest">
-            by <span className="text-brand-lighter">fomau</span>
+            by{" "}
+            <a
+              href="https://fomau.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-brand-lighter hover:text-brand-light transition-colors duration-200"
+            >
+              fomau
+            </a>
           </motion.p>
         </div>
 
