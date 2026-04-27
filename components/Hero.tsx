@@ -45,8 +45,8 @@ export default function Hero() {
         transition={{ duration: 0.6, delay: 0.2 }}
         className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2 glass-card px-5 py-2.5 rounded-full mb-8 text-xs text-white/70 mx-auto text-center"
       >
-        <span className="flex items-center gap-1 text-gold-light">
-          <span className="w-2 h-2 rounded-full bg-gold animate-pulse" />
+        <span className="flex items-center gap-1 text-emerald-400">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           Disponible maintenant
         </span>
         <span className="hidden sm:block w-px h-3 bg-white/20" />
