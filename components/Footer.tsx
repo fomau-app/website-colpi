@@ -7,11 +7,17 @@ const links: Record<string, LinkItem[]> = {
   Produit: [
     { label: "L'app", href: "#" },
     { label: "Les jeux", href: "#jeux" },
+    { label: "Supprimer mon compte", href: "/deleteaccount" },
   ],
   Contact: [
     { label: "contact@colpi.fr", href: "mailto:contact@colpi.fr" },
     { label: "Instagram", href: "https://www.instagram.com/colpi_app/", external: true },
     { label: "TikTok", href: "https://www.tiktok.com/@colpi_app", external: true },
+  ],
+  Légal: [
+    { label: "Mentions légales", href: "/mentions-legales" },
+    { label: "Politique de confidentialité", href: "/politique-de-confidentialite" },
+    { label: "CGU", href: "/cgu" },
   ],
 };
 

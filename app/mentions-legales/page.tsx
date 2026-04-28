@@ -1,0 +1,73 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Mentions légales — Colpi",
+  description: "Mentions légales du site colpi.fr et de l'application Colpi.",
+};
+
+export default function MentionsLegalesPage() {
+  return (
+    <main className="min-h-screen px-6 py-24">
+      <div className="max-w-2xl mx-auto">
+
+        <Link href="/" className="inline-flex items-center gap-2 text-sm text-white/40 hover:text-white transition-colors mb-12">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2">
+            <path d="M19 12H5M12 5l-7 7 7 7" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+          Retour à l&apos;accueil
+        </Link>
+
+        <div className="mb-12">
+          <p className="text-xs font-semibold text-gold/80 uppercase tracking-widest mb-4">Légal</p>
+          <h1 className="text-4xl font-bold text-white mb-4">Mentions légales</h1>
+          <p className="text-white/40 text-sm">Dernière mise à jour : avril 2025</p>
+        </div>
+
+        <div className="space-y-10 text-white/60 text-sm leading-relaxed">
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">1. Éditeur de l&apos;application</h2>
+            <p>Le site <strong className="text-white/80">colpi.fr</strong> et l&apos;application <strong className="text-white/80">Colpi</strong> sont édités par :</p>
+            <div className="mt-3 border border-white/10 rounded-xl p-5 space-y-1">
+              <p><span className="text-white/40">Entité :</span> <span className="text-white/80">FOMAU</span></p>
+              <p><span className="text-white/40">Email :</span> <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors">contact@colpi.fr</a></p>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">2. Propriété intellectuelle</h2>
+            <p>
+              L&apos;ensemble du contenu de ce site et de l&apos;application (textes, images, logos, icônes, jeux, interface) est protégé par le droit d&apos;auteur et appartient à FOMAU, sauf mentions contraires. Toute reproduction ou diffusion non autorisée est interdite.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">3. Données personnelles</h2>
+            <p>
+              La collecte et le traitement des données personnelles sont décrits dans notre{" "}
+              <Link href="/politique-de-confidentialite" className="text-gold/80 hover:text-white transition-colors">
+                Politique de confidentialité
+              </Link>.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">4. Limitation de responsabilité</h2>
+            <p>
+              FOMAU s&apos;efforce de maintenir les informations publiées à jour et exactes, mais ne saurait être tenu responsable des erreurs ou omissions, ni des dommages directs ou indirects résultant de l&apos;utilisation du site ou de l&apos;application.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">5. Droit applicable</h2>
+            <p>
+              Les présentes mentions légales sont soumises au droit français. En cas de litige, les tribunaux français seront seuls compétents.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </main>
+  );
+}
