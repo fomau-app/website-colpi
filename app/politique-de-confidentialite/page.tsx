@@ -40,8 +40,21 @@ export default function PolitiqueConfidentialitePage() {
           <section>
             <h2 className="text-white font-semibold text-base mb-3">2. Données collectées</h2>
             <p className="mb-4">
-              Colpi <strong className="text-white/80">ne collecte aucune donnée personnelle identifiable</strong> : pas de nom, pas d&apos;adresse e-mail, pas de numéro de téléphone, pas de géolocalisation précise, pas de suivi publicitaire.
+              Colpi <strong className="text-white/80">ne collecte aucune donnée personnelle identifiable</strong>. Sont notamment exclus :
             </p>
+            <ul className="space-y-2 mb-5">
+              {[
+                "Nom, adresse e-mail, mot de passe ou numéro de téléphone",
+                "Géolocalisation précise",
+                "Cookies tiers ou traqueurs publicitaires",
+                "Données de santé, photos, contacts ou toute autre donnée sensible",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="text-white/30 mt-1">✕</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
             <p className="mb-3">Seules des données techniques anonymes sont collectées automatiquement :</p>
             <ul className="space-y-2 mb-4">
               {[
@@ -58,7 +71,7 @@ export default function PolitiqueConfidentialitePage() {
               ))}
             </ul>
             <p>
-              Ces informations ne révèlent pas votre identité. Elles sont collectées principalement pour assurer le bon fonctionnement de l&apos;application et à des fins d&apos;analyse interne.
+              Ces données sont hébergées par des services tiers sécurisés (ex : Firebase Analytics) et ne permettent pas d&apos;identifier un utilisateur personnellement.
             </p>
           </section>
 
@@ -92,7 +105,7 @@ export default function PolitiqueConfidentialitePage() {
             <ul className="space-y-3">
               {[
                 { titre: "Consentement", desc: "Si vous nous donnez un accord explicite pour un usage spécifique." },
-                { titre: "Prestataires techniques", desc: "Des outils d'analyse anonymes (de type Firebase Analytics ou équivalent) pour les statistiques d'usage global, sans identification des utilisateurs." },
+                { titre: "Prestataires techniques", desc: "Firebase Analytics (statistiques d'usage anonymes) et RevenueCat (gestion des abonnements). Ces services sont conformes au RGPD et n'ont pas accès à vos données personnelles identifiables." },
                 { titre: "Obligations légales", desc: "Si nous y sommes légalement contraints (décision de justice, autorité publique, sécurité nationale)." },
                 { titre: "Intérêts vitaux", desc: "Pour prévenir une fraude, une menace à la sécurité ou une activité illicite." },
                 { titre: "Cession d'activité", desc: "En cas de fusion, acquisition ou cession d'actifs, vos données peuvent être transférées, dans le respect de cette politique." },
@@ -182,7 +195,8 @@ export default function PolitiqueConfidentialitePage() {
             <h2 className="text-white font-semibold text-base mb-3">13. Contact</h2>
             <p>
               Pour toute question relative à cette politique, contactez FOMAU à{" "}
-              <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors font-medium">contact@colpi.fr</a>.
+              <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors font-medium">contact@colpi.fr</a>{" "}
+              ou via le site <a href="https://www.colpi.fr" className="text-gold/80 hover:text-white transition-colors">www.colpi.fr</a>.
             </p>
           </section>
 

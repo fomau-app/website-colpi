@@ -85,13 +85,28 @@ export default function CguPage() {
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-base mb-3">5. Abonnements et résiliation</h2>
+            <h2 className="text-white font-semibold text-base mb-3">5. Abonnements et paiements</h2>
             <p className="mb-3">
-              Les abonnements hebdomadaires et mensuels sont à renouvellement automatique. Vous pouvez annuler votre abonnement à tout moment depuis :
+              Les abonnements sont gérés via <strong className="text-white/80">RevenueCat</strong> et traités par Apple (App Store) ou Google (Google Play). FOMAU ne collecte ni ne stocke aucune donnée bancaire.
+            </p>
+            <ul className="space-y-2 mb-4">
+              {[
+                "Abonnement hebdomadaire — avec période d'essai gratuit",
+                "Abonnement mensuel",
+                "Achat unique (accès à vie) : accès permanent à tous les jeux",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="text-gold/60 mt-1">—</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mb-3">
+              Les prix sont indiqués dans l&apos;application et peuvent varier selon votre région. Les abonnements se renouvellent automatiquement. Vous pouvez annuler à tout moment avant la fin de la période en cours, depuis :
             </p>
             <ul className="space-y-2 mb-3">
               {[
-                "Les réglages de votre compte Apple ID (App Store)",
+                "Réglages de votre compte Apple ID (App Store)",
                 "Google Play → Abonnements (Android)",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
@@ -103,8 +118,12 @@ export default function CguPage() {
             <p>
               Colpi ne nécessite pas la création d&apos;un compte. Aucune donnée personnelle n&apos;est requise pour accéder aux jeux gratuits ou aux contenus premium.
             </p>
-            <p className="mt-3">
-              L&apos;annulation prend effet à la fin de la période en cours. Aucun remboursement partiel n&apos;est effectué pour la période restante, sauf décision de l&apos;App Store ou du Google Play.
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">6. Remboursements</h2>
+            <p>
+              FOMAU ne propose aucun remboursement direct. Toute demande doit être effectuée auprès de l&apos;<strong className="text-white/80">App Store</strong> ou de <strong className="text-white/80">Google Play</strong>, selon leurs propres conditions de remboursement.
             </p>
           </section>
 
@@ -158,10 +177,26 @@ export default function CguPage() {
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-base mb-3">12. Droit applicable et litiges</h2>
+            <h2 className="text-white font-semibold text-base mb-3">12. Contact</h2>
+            <p className="mb-3">Une question ou un problème ? Contactez-nous :</p>
+            <ul className="space-y-2">
+              {[
+                { label: "Email", value: "contact@colpi.fr", href: "mailto:contact@colpi.fr" },
+                { label: "Instagram", value: "@colpi_app", href: "https://www.instagram.com/colpi_app/" },
+                { label: "TikTok", value: "@colpi_app", href: "https://www.tiktok.com/@colpi_app" },
+              ].map(({ label, value, href }) => (
+                <li key={label} className="flex items-center gap-2">
+                  <span className="text-white/40">{label} :</span>
+                  <a href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="text-gold/80 hover:text-white transition-colors">{value}</a>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">13. Droit applicable et litiges</h2>
             <p>
-              Les présentes CGU sont soumises au droit français. Tout litige relève de la compétence exclusive des tribunaux français. En cas de différend, une solution amiable sera recherchée en priorité via{" "}
-              <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors">contact@colpi.fr</a>.
+              Les présentes CGU sont soumises au droit français. Tout litige relève de la compétence exclusive des tribunaux français. En cas de différend, une solution amiable sera recherchée en priorité.
             </p>
           </section>
 
