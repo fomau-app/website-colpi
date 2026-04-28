@@ -29,21 +29,27 @@ export default function PolitiqueConfidentialitePage() {
           <section>
             <h2 className="text-white font-semibold text-base mb-3">1. Introduction</h2>
             <p>
-              Colpi est une application mobile de jeux de soirée éditée par <strong className="text-white/80">FOMAU</strong>. Nous respectons votre vie privée et nous nous engageons à collecter le strict minimum de données nécessaires au bon fonctionnement de l&apos;application.
+              <strong className="text-white/80">FOMAU</strong> (&quot;nous&quot;, &quot;notre&quot;) s&apos;engage à protéger votre vie privée et vos informations personnelles. Cette politique décrit ce que nous collectons, pourquoi, comment nous l&apos;utilisons, et quels droits vous avez. Si vous avez des questions, contactez-nous à{" "}
+              <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors">contact@colpi.fr</a>.
+            </p>
+            <p className="mt-3">
+              Cette politique s&apos;applique à l&apos;application mobile <strong className="text-white/80">Colpi</strong> et à tout service associé. Veuillez la lire attentivement avant d&apos;utiliser l&apos;application.
             </p>
           </section>
 
           <section>
             <h2 className="text-white font-semibold text-base mb-3">2. Données collectées</h2>
             <p className="mb-4">
-              Colpi <strong className="text-white/80">ne collecte aucune donnée personnelle</strong> : pas de nom, pas d&apos;adresse e-mail, pas de numéro de téléphone, pas de géolocalisation, pas de suivi publicitaire.
+              Colpi <strong className="text-white/80">ne collecte aucune donnée personnelle identifiable</strong> : pas de nom, pas d&apos;adresse e-mail, pas de numéro de téléphone, pas de géolocalisation précise, pas de suivi publicitaire.
             </p>
-            <p className="mb-3">Seules des données techniques anonymes sont collectées :</p>
+            <p className="mb-3">Seules des données techniques anonymes sont collectées automatiquement :</p>
             <ul className="space-y-2 mb-4">
               {[
-                "Type d'appareil et version du système d'exploitation",
+                "Type d'appareil, modèle et fabricant",
+                "Version du système d'exploitation",
                 "Langue de l'appareil",
-                "Données d'usage anonymisées (temps passé dans l'app, jeux joués, interactions par écran)",
+                "Adresse IP (non stockée individuellement)",
+                "Données d'usage anonymisées : jeux joués, temps passé, interactions par écran",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="text-gold/60 mt-1">—</span>
@@ -51,21 +57,22 @@ export default function PolitiqueConfidentialitePage() {
                 </li>
               ))}
             </ul>
-            <p>Ces données sont strictement non personnelles et ne permettent pas de vous identifier.</p>
+            <p>
+              Ces informations ne révèlent pas votre identité. Elles sont collectées principalement pour assurer le bon fonctionnement de l&apos;application et à des fins d&apos;analyse interne.
+            </p>
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-base mb-3">3. Finalités</h2>
-            <p className="mb-3">Ces données anonymes sont utilisées uniquement pour :</p>
-            <ul className="space-y-2">
+            <h2 className="text-white font-semibold text-base mb-3">3. Finalités et bases légales du traitement</h2>
+            <p className="mb-3">Nous traitons ces données sur les bases légales suivantes :</p>
+            <ul className="space-y-3">
               {[
-                "Améliorer le fonctionnement et la stabilité de l'application",
-                "Comprendre quelles fonctionnalités et quels jeux plaisent",
-                "Corriger les bugs et améliorer la fluidité",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2">
+                { base: "Intérêt légitime", desc: "Améliorer le fonctionnement, la stabilité et les fonctionnalités de l'application ; identifier les bugs ; comprendre quels jeux plaisent." },
+                { base: "Obligations légales", desc: "Divulguer des informations si la loi l'exige (demande judiciaire, autorité compétente)." },
+              ].map(({ base, desc }) => (
+                <li key={base} className="flex items-start gap-2">
                   <span className="text-gold/60 mt-1">—</span>
-                  <span>{item}</span>
+                  <span><strong className="text-white/80">{base} :</strong> {desc}</span>
                 </li>
               ))}
             </ul>
@@ -81,13 +88,46 @@ export default function PolitiqueConfidentialitePage() {
 
           <section>
             <h2 className="text-white font-semibold text-base mb-3">5. Partage avec des tiers</h2>
+            <p className="mb-3">Nous pouvons partager des données dans les situations suivantes :</p>
+            <ul className="space-y-3">
+              {[
+                { titre: "Consentement", desc: "Si vous nous donnez un accord explicite pour un usage spécifique." },
+                { titre: "Prestataires techniques", desc: "Des outils d'analyse anonymes (de type Firebase Analytics ou équivalent) pour les statistiques d'usage global, sans identification des utilisateurs." },
+                { titre: "Obligations légales", desc: "Si nous y sommes légalement contraints (décision de justice, autorité publique, sécurité nationale)." },
+                { titre: "Intérêts vitaux", desc: "Pour prévenir une fraude, une menace à la sécurité ou une activité illicite." },
+                { titre: "Cession d'activité", desc: "En cas de fusion, acquisition ou cession d'actifs, vos données peuvent être transférées, dans le respect de cette politique." },
+              ].map(({ titre, desc }) => (
+                <li key={titre} className="flex items-start gap-2">
+                  <span className="text-gold/60 mt-1">—</span>
+                  <span><strong className="text-white/80">{titre} :</strong> {desc}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">6. Sites et services tiers</h2>
             <p>
-              Nous ne partageons aucune donnée personnelle avec des tiers. Nous utilisons des outils d&apos;analyse anonymes (de type Firebase Analytics ou équivalent) uniquement pour des statistiques d&apos;usage global, sans identification des utilisateurs.
+              L&apos;application peut contenir des liens vers des sites ou services tiers. Nous ne sommes pas responsables des pratiques de confidentialité de ces tiers. Les données que vous leur communiquez ne sont pas couvertes par cette politique. Nous vous encourageons à lire leurs propres politiques de confidentialité.
             </p>
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-base mb-3">6. Mineurs</h2>
+            <h2 className="text-white font-semibold text-base mb-3">7. Conservation des données</h2>
+            <p>
+              Les données techniques anonymes sont conservées uniquement le temps nécessaire aux fins décrites dans cette politique, sans jamais dépasser <strong className="text-white/80">6 mois</strong>. Lorsqu&apos;elles ne sont plus utiles, elles sont supprimées ou anonymisées. Aucune donnée personnelle identifiable n&apos;étant collectée, aucune donnée de ce type n&apos;est stockée.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">8. Sécurité</h2>
+            <p>
+              Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger les données traitées. Cependant, aucune transmission sur internet n&apos;est garantie à 100% sécurisée. L&apos;utilisation de l&apos;application se fait sous votre responsabilité depuis un environnement sécurisé.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-white font-semibold text-base mb-3">9. Mineurs</h2>
             <p>
               Colpi est destinée à un public de <strong className="text-white/80">17 ans et plus</strong>. L&apos;application contient des références à des jeux pouvant impliquer de l&apos;alcool dans un contexte festif. Elle ne doit pas être utilisée par des mineurs sans la supervision d&apos;un adulte responsable.
             </p>
@@ -95,7 +135,7 @@ export default function PolitiqueConfidentialitePage() {
 
           {/* Alcohol warning */}
           <section className="border border-amber-500/20 bg-amber-500/5 rounded-2xl p-6">
-            <h2 className="text-amber-400 font-semibold text-base mb-2">7. Avertissement alcool</h2>
+            <h2 className="text-amber-400 font-semibold text-base mb-2">10. Avertissement alcool</h2>
             <p className="text-white/60 leading-relaxed">
               Colpi ne promeut, n&apos;encourage ni ne cautionne en aucune façon la consommation d&apos;alcool ou de toute autre substance. Certains jeux peuvent, dans leur usage social, être associés à des pratiques impliquant de l&apos;alcool : ces pratiques relèvent de l&apos;entière responsabilité des utilisateurs.
             </p>
@@ -103,27 +143,46 @@ export default function PolitiqueConfidentialitePage() {
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-base mb-3">8. Vos droits (RGPD)</h2>
+            <h2 className="text-white font-semibold text-base mb-3">11. Vos droits (RGPD)</h2>
+            <p className="mb-3">
+              Si vous résidez dans l&apos;Espace Économique Européen, vous disposez des droits suivants sur vos données personnelles :
+            </p>
+            <ul className="space-y-2 mb-4">
+              {[
+                "Droit d'accès et d'obtention d'une copie de vos données",
+                "Droit de rectification",
+                "Droit à l'effacement (« droit à l'oubli »)",
+                "Droit à la limitation du traitement",
+                "Droit à la portabilité",
+                "Droit d'opposition au traitement",
+                "Droit de retirer votre consentement à tout moment (sans affecter la licéité du traitement antérieur)",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-2">
+                  <span className="text-gold/60 mt-1">—</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
             <p>
-              Dans la mesure où aucune donnée personnelle n&apos;est collectée, la plupart des droits RGPD ne trouvent pas à s&apos;appliquer. Si vous avez néanmoins une question relative à vos données ou souhaitez exercer un droit, contactez-nous à{" "}
+              Dans la mesure où aucune donnée personnelle identifiable n&apos;est collectée, la plupart de ces droits ne trouvent pas à s&apos;appliquer. Pour toute demande, contactez-nous à{" "}
               <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors">contact@colpi.fr</a>.
-              Vous pouvez également saisir la{" "}
+              Vous pouvez également saisir votre autorité de protection des données locale — en France, la{" "}
               <a href="https://www.cnil.fr" target="_blank" rel="noopener noreferrer" className="text-gold/80 hover:text-white transition-colors">CNIL</a>.
             </p>
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-base mb-3">9. Contact</h2>
+            <h2 className="text-white font-semibold text-base mb-3">12. Mises à jour de cette politique</h2>
             <p>
-              Pour toute question relative à cette politique de confidentialité, contactez FOMAU à{" "}
-              <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors font-medium">contact@colpi.fr</a>.
+              Nous pouvons mettre à jour cette politique à tout moment. La date de dernière mise à jour est indiquée en haut de la page. En cas de modification substantielle, nous vous en informerons via l&apos;application ou par tout autre moyen approprié. Nous vous encourageons à consulter cette page régulièrement.
             </p>
           </section>
 
           <section>
-            <h2 className="text-white font-semibold text-base mb-3">10. Modifications</h2>
+            <h2 className="text-white font-semibold text-base mb-3">13. Contact</h2>
             <p>
-              Cette politique peut évoluer en cas de changement de l&apos;application. Toute modification sera indiquée ici avec la date de mise à jour.
+              Pour toute question relative à cette politique, contactez FOMAU à{" "}
+              <a href="mailto:contact@colpi.fr" className="text-gold/80 hover:text-white transition-colors font-medium">contact@colpi.fr</a>.
             </p>
           </section>
 
