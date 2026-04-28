@@ -7,7 +7,6 @@ const links: Record<string, LinkItem[]> = {
   Produit: [
     { label: "L'app", href: "#" },
     { label: "Les jeux", href: "#jeux" },
-    { label: "Supprimer mon compte", href: "/deleteaccount" },
   ],
   Contact: [
     { label: "contact@colpi.fr", href: "mailto:contact@colpi.fr" },

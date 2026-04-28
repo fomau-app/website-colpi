@@ -101,26 +101,11 @@ export default function CguPage() {
               ))}
             </ul>
             <p>
+              Colpi ne nécessite pas la création d&apos;un compte. Aucune donnée personnelle n&apos;est requise pour accéder aux jeux gratuits ou aux contenus premium.
+            </p>
+            <p className="mt-3">
               L&apos;annulation prend effet à la fin de la période en cours. Aucun remboursement partiel n&apos;est effectué pour la période restante, sauf décision de l&apos;App Store ou du Google Play.
             </p>
-          </section>
-
-          <section>
-            <h2 className="text-white font-semibold text-base mb-3">6. Création de compte</h2>
-            <p className="mb-3">Lors de l&apos;inscription, vous vous engagez à :</p>
-            <ul className="space-y-2">
-              {[
-                "Fournir des informations exactes et à jour",
-                "Maintenir la confidentialité de vos identifiants",
-                "Ne pas créer plusieurs comptes",
-                "Notifier Colpi en cas d'utilisation non autorisée de votre compte",
-              ].map((item) => (
-                <li key={item} className="flex items-start gap-2">
-                  <span className="text-gold/60 mt-1">—</span>
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
           </section>
 
           <section>
