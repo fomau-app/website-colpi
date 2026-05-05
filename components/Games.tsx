@@ -22,7 +22,7 @@ const games = [
   {
     id: "tierpotes",
     name: "TriPotes",
-    tagline: "Le juge classe ses potes selon une question secrète. Le groupe doit deviner laquelle.",
+    tagline: "Le juge classe ses potes selon une question secrète. Il faut deviner laquelle.",
     color: "#AC5D1C",
     image: "/games/tierpotes.png",
     isNew: true,
@@ -273,7 +273,7 @@ export default function Games() {
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.06, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] }}
               onClick={() => setSelected(game)}
-              className="game-card rounded-3xl p-6 text-left group hover:border-white/15 hover:scale-[1.02] transition-all duration-300 cursor-pointer relative overflow-hidden"
+              className="game-card rounded-3xl p-6 text-left group hover:border-white/15 hover:scale-[1.02] transition-all duration-300 cursor-pointer relative overflow-hidden h-[228px]"
             >
               {game.isNew && (
                 <span className="absolute top-3 right-3 bg-[#3B82F6] text-white text-[10px] font-bold px-2 py-0.5 rounded-full tracking-wide">
@@ -291,11 +291,11 @@ export default function Games() {
                 >
                   <Image src={game.image} alt={game.name} width={56} height={56} className="w-full h-full object-cover" />
                 </div>
-                <h3 className="text-white font-bold text-lg mb-2">{game.name}</h3>
-                <p className="text-white/40 text-sm leading-relaxed flex-1">{game.tagline}</p>
+                <h3 className="text-white font-bold text-lg mb-1">{game.name}</h3>
+                <p className="text-white/40 text-sm leading-relaxed">{game.tagline}</p>
                 {game.rules.length > 0 && (
                   <div
-                    className="mt-4 text-xs font-medium flex items-center gap-1"
+                    className="mt-auto pt-3 text-xs font-medium flex items-center gap-1"
                     style={{ color: game.color }}
                   >
                     Voir les règles
