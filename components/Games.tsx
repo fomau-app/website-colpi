@@ -37,7 +37,7 @@ const games = [
   },
   {
     id: "tierpotes",
-    name: "TierPotes",
+    name: "TriPotes",
     tagline: "Le juge classe ses potes selon une question secrète. Le groupe doit deviner laquelle.",
     color: "#AC5D1C",
     image: "/games/tierpotes.png",
@@ -286,15 +286,15 @@ export default function Games() {
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ background: `radial-gradient(circle at 50% 0%, ${game.color}12 0%, transparent 70%)` }}
               />
-              <div className="relative z-10">
+              <div className="relative z-10 flex flex-col h-full">
                 <div
-                  className="w-14 h-14 rounded-2xl overflow-hidden mb-4"
+                  className="w-14 h-14 rounded-2xl overflow-hidden mb-4 flex-shrink-0"
                   style={{ border: `1px solid ${game.color}40` }}
                 >
                   <Image src={game.image} alt={game.name} width={56} height={56} className="w-full h-full object-cover" />
                 </div>
                 <h3 className="text-white font-bold text-lg mb-2">{game.name}</h3>
-                <p className="text-white/40 text-sm leading-relaxed">{game.tagline}</p>
+                <p className="text-white/40 text-sm leading-relaxed flex-1">{game.tagline}</p>
                 {game.rules.length > 0 && (
                   <div
                     className="mt-4 text-xs font-medium flex items-center gap-1"
