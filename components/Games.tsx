@@ -7,24 +7,10 @@ import { X } from "lucide-react";
 const games = [
   // — NEW —
   {
-    id: "dix",
-    name: "C'est un.e 10 mais…",
-    tagline: "Un.e 10 avec une contrepartie surprenante",
-    color: "#D97706",
-    image: "/games/dix.png",
-    isNew: true,
-    rules: [
-      "Une personne est un 10/10 physiquement",
-      "Une contrepartie vient changer la perception",
-      "À 3, chacun annonce une note sur 10",
-      "Certains joueurs prennent une sanction en fonction de leur note",
-    ],
-  },
-  {
     id: "trivial",
     name: "Trivial Pour'Cuite",
     tagline: "Culture G et sanctions : cumule ou risque tout !",
-    color: "#8B35F1",
+    color: "#3779FC",
     image: "/games/trivial.png",
     isNew: true,
     rules: [
@@ -35,10 +21,81 @@ const games = [
     ],
   },
   {
+    id: "kimami",
+    name: "Kimami",
+    tagline: "Deviner ce que tes potes pensent de toi",
+    color: "#FFE051",
+    image: "/games/kimami.png",
+    isNew: true,
+    rules: [
+      "Chacun classe tout le monde en secret pour 3 questions",
+      "Une fois que tout le monde a voté, on découvre les classements",
+      "Le groupe doit deviner le vrai classement de chaque question via drag & drop",
+      "Nombre d'essais = (nombre de joueurs - 2), entre 1 et 3",
+      "Bonne réponse → on découvre les votes 🎉 / Échec → le vrai classement est révélé",
+    ],
+  },
+  {
+    id: "tierpotes",
+    name: "TierPotes",
+    tagline: "Le juge classe ses potes selon une question secrète. Le groupe doit deviner laquelle.",
+    color: "#AC5D1C",
+    image: "/games/tierpotes.png",
+    isNew: true,
+    rules: [
+      "Un joueur devient le juge",
+      "Il découvre une question secrète et classe les autres joueurs selon elle",
+      "Le groupe voit le classement et doit deviner la vraie question parmi 4 propositions",
+      "Si le groupe trouve → le juge boit / S'il se trompe → le groupe boit",
+    ],
+  },
+  {
+    id: "jojauge",
+    name: "Jojauge",
+    tagline: "Devine ce que les autres pensent vraiment de toi sur une jauge de 0 à 100",
+    color: "#058533",
+    image: "/games/jojauge.png",
+    isNew: true,
+    rules: [
+      "Un joueur est la cible : il ne regarde pas l'écran",
+      "Les autres votent en secret entre 0 et 100 sur une question",
+      "La cible doit deviner la moyenne (marge ±5)",
+      "Dans la zone → gagné, sinon → perdu",
+      "On passe ensuite au joueur suivant",
+    ],
+  },
+  {
+    id: "roue",
+    name: "La Roue",
+    tagline: "Jeu libre. Crée ta roue, choisis les probabilités, et laisse le hasard décider.",
+    color: "#45C614",
+    image: "/games/roue.png",
+    isNew: true,
+    rules: [
+      "Crée jusqu'à 10 cases avec ton propre texte",
+      "Définis le poids (probabilité relative) de chaque case",
+      "Lance la roue : le sélecteur en haut indique le quartier tiré",
+    ],
+  },
+  {
+    id: "dix",
+    name: "C'est un.e 10 mais…",
+    tagline: "Un.e 10 avec une contrepartie surprenante",
+    color: "#9CA3AF",
+    image: "/games/dix.png",
+    isNew: true,
+    rules: [
+      "Une personne est un 10/10 physiquement",
+      "Une contrepartie vient changer la perception",
+      "À 3, chacun annonce une note sur 10",
+      "Certains joueurs prennent une sanction en fonction de leur note",
+    ],
+  },
+  {
     id: "pitch",
     name: "Pitch Approx",
     tagline: "Deviner le film à partir d'un pitch très mal raconté",
-    color: "#7C3AED",
+    color: "#4728FE",
     image: "/games/pitch.png",
     isNew: true,
     rules: [
@@ -50,7 +107,7 @@ const games = [
     id: "copain",
     name: "Question pour un copain",
     tagline: "Des questions sur tes amis",
-    color: "#D97706",
+    color: "#8F26F7",
     image: "/games/copain.png",
     isNew: true,
     rules: [
@@ -64,7 +121,7 @@ const games = [
     id: "telepathe",
     name: "Télépathe",
     tagline: "Pense comme les autres",
-    color: "#06B6D4",
+    color: "#D350DE",
     image: "/games/telepathe.png",
     isNew: true,
     rules: [
@@ -79,7 +136,7 @@ const games = [
     id: "million",
     name: "Le Million mais…",
     tagline: "Accepte, ou pas, le million en échange d'une contrepartie",
-    color: "#F0A500",
+    color: "#56CA3C",
     image: "/games/million.png",
     isNew: false,
     rules: [
@@ -93,7 +150,7 @@ const games = [
     id: "def",
     name: "La Def",
     tagline: "Devine la définition d'un mot",
-    color: "#A855F7",
+    color: "#B76D25",
     image: "/games/def.png",
     isNew: false,
     rules: [
@@ -107,7 +164,7 @@ const games = [
     id: "casting",
     name: "Le Casting",
     tagline: "Convaincre le directeur de casting",
-    color: "#EF4444",
+    color: "#FB8732",
     image: "/games/casting.png",
     isNew: false,
     rules: [
@@ -121,7 +178,7 @@ const games = [
     id: "nombre",
     name: "Le Juste Nombre",
     tagline: "Devine le nombre le plus proche de la bonne réponse",
-    color: "#F97316",
+    color: "#939393",
     image: "/games/nombre.png",
     isNew: false,
     rules: [
@@ -135,7 +192,7 @@ const games = [
     id: "plus",
     name: "Qui est le plus ?",
     tagline: "Vote pour la personne qui est le plus…",
-    color: "#3B82F6",
+    color: "#B41B03",
     image: "/games/plus.png",
     isNew: false,
     rules: [
@@ -147,7 +204,7 @@ const games = [
     id: "tribunal",
     name: "Le Tribunal",
     tagline: "Défends-toi ou accuse les autres",
-    color: "#EF4444",
+    color: "#F92F28",
     image: "/games/tribunal.png",
     isNew: false,
     rules: [
@@ -160,7 +217,7 @@ const games = [
     id: "banger",
     name: "Banger ou Ringard",
     tagline: "Banger ou ringard ? Le groupe décide",
-    color: "#EC4899",
+    color: "#FDDA45",
     image: "/games/banger.png",
     isNew: false,
     rules: [
@@ -173,7 +230,7 @@ const games = [
     id: "entre",
     name: "Entre 1 et 20",
     tagline: "Trouve le bon nombre",
-    color: "#22C55E",
+    color: "#C83E26",
     image: "/games/entre.png",
     isNew: false,
     rules: [
