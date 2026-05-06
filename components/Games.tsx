@@ -23,7 +23,7 @@ const games = [
     id: "tierpotes",
     name: "TriPotes",
     tagline: "Le juge classe ses potes selon une question secrète. Il faut deviner laquelle.",
-    color: "#b3721e",
+    color: "#3F2874",
     image: "/games/TriPotes.png",
     isNew: true,
     rules: [
