@@ -10,7 +10,7 @@ const games = [
     name: "Trivial Pour'Cuite",
     tagline: "Culture G et sanctions : cumule ou risque tout !",
     color: "#3779FC",
-    image: "/games/trivial.png",
+    image: "/games/TrivialPourcuite.png",
     isNew: true,
     rules: [
       "Chaque joueur répond à une question chacun son tour",
@@ -24,7 +24,7 @@ const games = [
     name: "TriPotes",
     tagline: "Le juge classe ses potes selon une question secrète. Il faut deviner laquelle.",
     color: "#AC5D1C",
-    image: "/games/tierpotes.png",
+    image: "/games/TriPotes.png",
     isNew: true,
     rules: [
       "Un joueur devient le juge",
@@ -53,7 +53,7 @@ const games = [
     name: "Kimami",
     tagline: "Deviner ce que tes potes pensent de toi",
     color: "#FFE051",
-    image: "/games/kimami.png",
+    image: "/games/Kimami.png",
     isNew: true,
     rules: [
       "Chacun classe tout le monde en secret pour 3 questions",
@@ -68,7 +68,7 @@ const games = [
     name: "La Roue",
     tagline: "Jeu libre. Crée ta roue, choisis les probabilités, et laisse le hasard décider.",
     color: "#45C614",
-    image: "/games/roue.png",
+    image: "/games/LaRoue.png",
     isNew: true,
     rules: [
       "Crée jusqu'à 10 cases avec ton propre texte",
@@ -81,7 +81,7 @@ const games = [
     name: "Pitch Approx",
     tagline: "Deviner le film à partir d'un pitch très mal raconté",
     color: "#4728FE",
-    image: "/games/pitch.png",
+    image: "/games/PitchApprox.png",
     isNew: true,
     rules: [
       "Un pitch approximatif s'affiche à l'écran",
@@ -93,7 +93,7 @@ const games = [
     name: "Question pour un copain",
     tagline: "Des questions sur tes amis",
     color: "#8F26F7",
-    image: "/games/copain.png",
+    image: "/games/QuestionPourUnCopain.png",
     isNew: true,
     rules: [
       "Un joueur est tiré au sort",
@@ -107,7 +107,7 @@ const games = [
     name: "Télépathe",
     tagline: "Pense comme les autres",
     color: "#D350DE",
-    image: "/games/telepathe.png",
+    image: "/games/Telepathe.png",
     isNew: true,
     rules: [
       "2 mots s'affichent à l'écran",
@@ -121,7 +121,7 @@ const games = [
     name: "C'est un.e 10 mais…",
     tagline: "Un.e 10 avec une contrepartie surprenante",
     color: "#9CA3AF",
-    image: "/games/dix.png",
+    image: "/games/CestUn10Mais.png",
     isNew: true,
     rules: [
       "Une personne est un 10/10 physiquement",
@@ -135,7 +135,7 @@ const games = [
     name: "Le Tribunal",
     tagline: "Défends-toi ou accuse les autres",
     color: "#F92F28",
-    image: "/games/tribunal.png",
+    image: "/games/Tribunal.png",
     isNew: false,
     rules: [
       "Chaque joueur écrit une accusation (il pourra rester secret)",
@@ -148,7 +148,7 @@ const games = [
     name: "Banger ou Ringard",
     tagline: "Banger ou ringard ? Le groupe décide",
     color: "#FDDA45",
-    image: "/games/banger.png",
+    image: "/games/BangerOuRingard.png",
     isNew: false,
     rules: [
       "Une situation est proposée à tous les joueurs",
@@ -161,7 +161,7 @@ const games = [
     name: "Entre 1 et 20",
     tagline: "Trouve le bon nombre",
     color: "#C83E26",
-    image: "/games/entre.png",
+    image: "/games/Entre1et20.png",
     isNew: false,
     rules: [
       "Tirage au sort d'un joueur pour deviner le numéro mystère",
@@ -174,7 +174,7 @@ const games = [
     name: "Le Casting",
     tagline: "Convaincre le directeur de casting",
     color: "#FB8732",
-    image: "/games/casting.png",
+    image: "/games/Casting.png",
     isNew: false,
     rules: [
       "Un joueur devient le directeur de casting",
@@ -188,7 +188,7 @@ const games = [
     name: "Le Juste Nombre",
     tagline: "Devine le nombre le plus proche de la bonne réponse",
     color: "#939393",
-    image: "/games/nombre.png",
+    image: "/games/LeJusteNombre.png",
     isNew: false,
     rules: [
       "Solo ou par équipe",
@@ -202,7 +202,7 @@ const games = [
     name: "Qui est le plus ?",
     tagline: "Vote pour la personne qui est le plus…",
     color: "#B41B03",
-    image: "/games/plus.png",
+    image: "/games/QuiEstLePlus.png",
     isNew: false,
     rules: [
       "Une question apparaît",
@@ -214,7 +214,7 @@ const games = [
     name: "Le Million mais…",
     tagline: "Accepte, ou pas, le million en échange d'une contrepartie",
     color: "#56CA3C",
-    image: "/games/million.png",
+    image: "/games/LeMillionMais.png",
     isNew: false,
     rules: [
       "Une situation avec un million et sa contrepartie est proposée",
@@ -228,7 +228,7 @@ const games = [
     name: "La Def",
     tagline: "Devine la définition d'un mot",
     color: "#B76D25",
-    image: "/games/def.png",
+    image: "/games/LaDef.png",
     isNew: false,
     rules: [
       "Un mot apparaît",
