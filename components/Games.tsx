@@ -9,7 +9,7 @@ const games = [
     id: "trivial",
     name: "Trivial Pour'Cuite",
     tagline: "Culture G et sanctions : cumule ou risque tout !",
-    color: "#3779FC",
+    color: "#3177ff",
     image: "/games/TrivialPourcuite.png",
     isNew: true,
     rules: [
@@ -23,7 +23,7 @@ const games = [
     id: "tierpotes",
     name: "TriPotes",
     tagline: "Le juge classe ses potes selon une question secrète. Il faut deviner laquelle.",
-    color: "#AC5D1C",
+    color: "#b3721e",
     image: "/games/TriPotes.png",
     isNew: true,
     rules: [
@@ -37,7 +37,7 @@ const games = [
     id: "jojauge",
     name: "Jojauge",
     tagline: "Devine ce que les autres pensent vraiment de toi sur une jauge de 0 à 100",
-    color: "#058533",
+    color: "#0088b0",
     image: "/games/jojauge.png",
     isNew: true,
     rules: [
@@ -52,7 +52,7 @@ const games = [
     id: "kimami",
     name: "Kimami",
     tagline: "Deviner ce que tes potes pensent de toi",
-    color: "#FFE051",
+    color: "#2255e0",
     image: "/games/Kimami.png",
     isNew: true,
     rules: [
@@ -67,7 +67,7 @@ const games = [
     id: "roue",
     name: "La Roue",
     tagline: "Jeu libre. Crée ta roue, choisis les probabilités, et laisse le hasard décider.",
-    color: "#45C614",
+    color: "#362BA7",
     image: "/games/LaRoue.png",
     isNew: true,
     rules: [
@@ -80,7 +80,7 @@ const games = [
     id: "pitch",
     name: "Pitch Approx",
     tagline: "Deviner le film à partir d'un pitch très mal raconté",
-    color: "#4728FE",
+    color: "#5134ff",
     image: "/games/PitchApprox.png",
     isNew: true,
     rules: [
@@ -92,7 +92,7 @@ const games = [
     id: "copain",
     name: "Question pour un copain",
     tagline: "Des questions sur tes amis",
-    color: "#8F26F7",
+    color: "#9023fc",
     image: "/games/QuestionPourUnCopain.png",
     isNew: true,
     rules: [
@@ -106,7 +106,7 @@ const games = [
     id: "telepathe",
     name: "Télépathe",
     tagline: "Pense comme les autres",
-    color: "#D350DE",
+    color: "#ce55b6",
     image: "/games/Telepathe.png",
     isNew: true,
     rules: [
@@ -120,7 +120,7 @@ const games = [
     id: "dix",
     name: "C'est un.e 10 mais…",
     tagline: "Un.e 10 avec une contrepartie surprenante",
-    color: "#9CA3AF",
+    color: "#6a22aa",
     image: "/games/CestUn10Mais.png",
     isNew: true,
     rules: [
@@ -134,7 +134,7 @@ const games = [
     id: "tribunal",
     name: "Le Tribunal",
     tagline: "Défends-toi ou accuse les autres",
-    color: "#F92F28",
+    color: "#a84848",
     image: "/games/Tribunal.png",
     isNew: false,
     rules: [
@@ -147,7 +147,7 @@ const games = [
     id: "banger",
     name: "Banger ou Ringard",
     tagline: "Banger ou ringard ? Le groupe décide",
-    color: "#FDDA45",
+    color: "#bf51ff",
     image: "/games/BangerOuRingard.png",
     isNew: false,
     rules: [
@@ -160,7 +160,7 @@ const games = [
     id: "entre",
     name: "Entre 1 et 20",
     tagline: "Trouve le bon nombre",
-    color: "#C83E26",
+    color: "#0256ca",
     image: "/games/Entre1et20.png",
     isNew: false,
     rules: [
@@ -173,7 +173,7 @@ const games = [
     id: "casting",
     name: "Le Casting",
     tagline: "Convaincre le directeur de casting",
-    color: "#FB8732",
+    color: "#b835bd",
     image: "/games/Casting.png",
     isNew: false,
     rules: [
@@ -187,7 +187,7 @@ const games = [
     id: "nombre",
     name: "Le Juste Nombre",
     tagline: "Devine le nombre le plus proche de la bonne réponse",
-    color: "#939393",
+    color: "#7030a8",
     image: "/games/LeJusteNombre.png",
     isNew: false,
     rules: [
@@ -201,7 +201,7 @@ const games = [
     id: "plus",
     name: "Qui est le plus ?",
     tagline: "Vote pour la personne qui est le plus…",
-    color: "#B41B03",
+    color: "#9e10c4",
     image: "/games/QuiEstLePlus.png",
     isNew: false,
     rules: [
@@ -213,7 +213,7 @@ const games = [
     id: "million",
     name: "Le Million mais…",
     tagline: "Accepte, ou pas, le million en échange d'une contrepartie",
-    color: "#56CA3C",
+    color: "#2e76f6",
     image: "/games/LeMillionMais.png",
     isNew: false,
     rules: [
@@ -227,7 +227,7 @@ const games = [
     id: "def",
     name: "La Def",
     tagline: "Devine la définition d'un mot",
-    color: "#B76D25",
+    color: "#b04888",
     image: "/games/LaDef.png",
     isNew: false,
     rules: [
@@ -287,7 +287,6 @@ export default function Games() {
               <div className="relative z-10 flex flex-col h-full">
                 <div
                   className="w-14 h-14 rounded-2xl overflow-hidden mb-4 flex-shrink-0"
-                  style={{ border: `1px solid ${game.color}40` }}
                 >
                   <Image src={game.image} alt={game.name} width={56} height={56} className="w-full h-full object-cover" />
                 </div>
@@ -330,7 +329,6 @@ export default function Games() {
                 <div className="flex items-center gap-3">
                   <div
                     className="w-12 h-12 rounded-2xl overflow-hidden"
-                    style={{ border: `1px solid ${selected.color}50` }}
                   >
                     <Image src={selected.image} alt={selected.name} width={48} height={48} className="w-full h-full object-cover" />
                   </div>
