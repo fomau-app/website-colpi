@@ -53,7 +53,7 @@ const games = [
     name: "Kimami",
     tagline: "Deviner ce que tes potes pensent de toi",
     color: "#2255e0",
-    image: "/games/Kimami.png",
+    image: "/games/kimami.png",
     isNew: true,
     rules: [
       "Chacun classe tout le monde en secret pour 3 questions",
@@ -107,7 +107,7 @@ const games = [
     name: "Télépathe",
     tagline: "Pense comme les autres",
     color: "#ce55b6",
-    image: "/games/Telepathe.png",
+    image: "/games/telepathe.png",
     isNew: true,
     rules: [
       "2 mots s'affichent à l'écran",
@@ -135,7 +135,7 @@ const games = [
     name: "Le Tribunal",
     tagline: "Défends-toi ou accuse les autres",
     color: "#a84848",
-    image: "/games/Tribunal.png",
+    image: "/games/tribunal.png",
     isNew: false,
     rules: [
       "Chaque joueur écrit une accusation (il pourra rester secret)",
@@ -174,7 +174,7 @@ const games = [
     name: "Le Casting",
     tagline: "Convaincre le directeur de casting",
     color: "#b835bd",
-    image: "/games/Casting.png",
+    image: "/games/casting.png",
     isNew: false,
     rules: [
       "Un joueur devient le directeur de casting",
